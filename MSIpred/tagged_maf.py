@@ -16,7 +16,7 @@ import pandas as pd
 
 def reduce_maf_df(tagged_maf_file):
     '''
-    Return a datafame with 15 essential columns of a tagged .maf file.
+    Return a datafame with essential columns of a tagged .maf file.
     '''
 
     # read maf file through chunks
