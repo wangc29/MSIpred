@@ -22,11 +22,7 @@ def reduce_maf_df(tagged_maf_file):
     # read maf file through chunks
     chunks=[]
     chunksize=10000
-    used_col = ['Hugo_Symbol','Entrez_Gene_Id','Chromosome','Start_Position','End_Position','Strand',
-                'Variant_Classification','Variant_Type','Reference_Allele','Tumor_Seq_Allele1',
-                'Tumor_Seq_Allele2','Tumor_Sample_Barcode','Matched_Norm_Sample_Barcode',
-                'TRANSCRIPT_STRAND','In_repeats'
-    ]
+    used_col = ['Variant_Classification','Variant_Type','Tumor_Sample_Barcode','In_repeats']
     maf_reader = read_table(tagged_maf_file,low_memory = False,comment='#',chunksize=chunksize,usecols = used_col)
     for chunk in maf_reader:
         chunks.append(chunk)
