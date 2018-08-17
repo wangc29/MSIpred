@@ -4,7 +4,7 @@
 MSIpre.tagged_maf
 ~~~~~~~~~~~~~~~~~
 
-This module provides the class 'MSIpre.raw_maf.Raw_Maf'
+This module provides the class 'MSIpred.raw_maf.Raw_Maf'
 class for creating feature table used for Microsatellite
 Instability classification.
 '''
